@@ -1,0 +1,3222 @@
+{
+  "normal": {
+    "treeId": "normal",
+    "name": "Standard Skill Tree",
+    "currency": "coins",
+    "skills": [
+      {
+        "id": "skill_normal_1",
+        "name": "Standard Skill Tree Upgrade 1",
+        "description": "Boosts damage (+10%) and stats.",
+        "cost": "10",
+        "currency": "coins",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_2",
+        "name": "Standard Skill Tree Upgrade 2",
+        "description": "Boosts damage (+20%) and stats.",
+        "cost": "1e3",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.2,
+          "rangeBonus": 4,
+          "fireRateBonus": 0.1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_3",
+        "name": "Standard Skill Tree Upgrade 3",
+        "description": "Boosts damage (+30%) and stats.",
+        "cost": "1e6",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.30000000000000004,
+          "rangeBonus": 6,
+          "fireRateBonus": 0.15000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_4",
+        "name": "Standard Skill Tree Upgrade 4",
+        "description": "Boosts damage (+40%) and stats.",
+        "cost": "1e9",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.4,
+          "rangeBonus": 8,
+          "fireRateBonus": 0.2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_5",
+        "name": "Standard Skill Tree Upgrade 5",
+        "description": "Boosts damage (+50%) and stats.",
+        "cost": "1e12",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.5,
+          "rangeBonus": 10,
+          "fireRateBonus": 0.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_6",
+        "name": "Standard Skill Tree Upgrade 6",
+        "description": "Boosts damage (+60%) and stats.",
+        "cost": "1e15",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.6000000000000001,
+          "rangeBonus": 12,
+          "fireRateBonus": 0.30000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_7",
+        "name": "Standard Skill Tree Upgrade 7",
+        "description": "Boosts damage (+70%) and stats.",
+        "cost": "1e18",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.7000000000000001,
+          "rangeBonus": 14,
+          "fireRateBonus": 0.35000000000000003
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_8",
+        "name": "Standard Skill Tree Upgrade 8",
+        "description": "Boosts damage (+80%) and stats.",
+        "cost": "1e21",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.8,
+          "rangeBonus": 16,
+          "fireRateBonus": 0.4
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_9",
+        "name": "Standard Skill Tree Upgrade 9",
+        "description": "Boosts damage (+90%) and stats.",
+        "cost": "1e24",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.9,
+          "rangeBonus": 18,
+          "fireRateBonus": 0.45
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_10",
+        "name": "Standard Skill Tree Upgrade 10",
+        "description": "Boosts damage (+100%) and stats.",
+        "cost": "1e27",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1,
+          "rangeBonus": 20,
+          "fireRateBonus": 0.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_11",
+        "name": "Standard Skill Tree Upgrade 11",
+        "description": "Boosts damage (+110%) and stats.",
+        "cost": "1e30",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.1,
+          "rangeBonus": 22,
+          "fireRateBonus": 0.55
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_12",
+        "name": "Standard Skill Tree Upgrade 12",
+        "description": "Boosts damage (+120%) and stats.",
+        "cost": "1e33",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.2000000000000002,
+          "rangeBonus": 24,
+          "fireRateBonus": 0.6000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_13",
+        "name": "Standard Skill Tree Upgrade 13",
+        "description": "Boosts damage (+130%) and stats.",
+        "cost": "1e36",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.3,
+          "rangeBonus": 26,
+          "fireRateBonus": 0.65
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_14",
+        "name": "Standard Skill Tree Upgrade 14",
+        "description": "Boosts damage (+140%) and stats.",
+        "cost": "1e39",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.4000000000000001,
+          "rangeBonus": 28,
+          "fireRateBonus": 0.7000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_15",
+        "name": "Standard Skill Tree Upgrade 15",
+        "description": "Boosts damage (+150%) and stats.",
+        "cost": "1e42",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.5,
+          "rangeBonus": 30,
+          "fireRateBonus": 0.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_16",
+        "name": "Standard Skill Tree Upgrade 16",
+        "description": "Boosts damage (+160%) and stats.",
+        "cost": "1e45",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.6,
+          "rangeBonus": 32,
+          "fireRateBonus": 0.8
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_17",
+        "name": "Standard Skill Tree Upgrade 17",
+        "description": "Boosts damage (+170%) and stats.",
+        "cost": "1e48",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.7000000000000002,
+          "rangeBonus": 34,
+          "fireRateBonus": 0.8500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_18",
+        "name": "Standard Skill Tree Upgrade 18",
+        "description": "Boosts damage (+180%) and stats.",
+        "cost": "1e51",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.8,
+          "rangeBonus": 36,
+          "fireRateBonus": 0.9
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_19",
+        "name": "Standard Skill Tree Upgrade 19",
+        "description": "Boosts damage (+190%) and stats.",
+        "cost": "1e54",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.9000000000000001,
+          "rangeBonus": 38,
+          "fireRateBonus": 0.9500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_20",
+        "name": "Standard Skill Tree Upgrade 20",
+        "description": "Boosts damage (+200%) and stats.",
+        "cost": "1e57",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2,
+          "rangeBonus": 40,
+          "fireRateBonus": 1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_21",
+        "name": "Standard Skill Tree Upgrade 21",
+        "description": "Boosts damage (+210%) and stats.",
+        "cost": "1e60",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.1,
+          "rangeBonus": 42,
+          "fireRateBonus": 1.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_22",
+        "name": "Standard Skill Tree Upgrade 22",
+        "description": "Boosts damage (+220%) and stats.",
+        "cost": "1e63",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.2,
+          "rangeBonus": 44,
+          "fireRateBonus": 1.1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_23",
+        "name": "Standard Skill Tree Upgrade 23",
+        "description": "Boosts damage (+230%) and stats.",
+        "cost": "1e66",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.3000000000000003,
+          "rangeBonus": 46,
+          "fireRateBonus": 1.1500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_24",
+        "name": "Standard Skill Tree Upgrade 24",
+        "description": "Boosts damage (+240%) and stats.",
+        "cost": "1e69",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.4000000000000004,
+          "rangeBonus": 48,
+          "fireRateBonus": 1.2000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_25",
+        "name": "Standard Skill Tree Upgrade 25",
+        "description": "Boosts damage (+250%) and stats.",
+        "cost": "1e72",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.5,
+          "rangeBonus": 50,
+          "fireRateBonus": 1.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_26",
+        "name": "Standard Skill Tree Upgrade 26",
+        "description": "Boosts damage (+260%) and stats.",
+        "cost": "1e75",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.6,
+          "rangeBonus": 52,
+          "fireRateBonus": 1.3
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_27",
+        "name": "Standard Skill Tree Upgrade 27",
+        "description": "Boosts damage (+270%) and stats.",
+        "cost": "1e78",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.7,
+          "rangeBonus": 54,
+          "fireRateBonus": 1.35
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_28",
+        "name": "Standard Skill Tree Upgrade 28",
+        "description": "Boosts damage (+280%) and stats.",
+        "cost": "1e81",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.8000000000000003,
+          "rangeBonus": 56,
+          "fireRateBonus": 1.4000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_29",
+        "name": "Standard Skill Tree Upgrade 29",
+        "description": "Boosts damage (+290%) and stats.",
+        "cost": "1e84",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.9000000000000004,
+          "rangeBonus": 58,
+          "fireRateBonus": 1.4500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_30",
+        "name": "Standard Skill Tree Upgrade 30",
+        "description": "Boosts damage (+300%) and stats.",
+        "cost": "1e87",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3,
+          "rangeBonus": 60,
+          "fireRateBonus": 1.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_31",
+        "name": "Standard Skill Tree Upgrade 31",
+        "description": "Boosts damage (+310%) and stats.",
+        "cost": "1e90",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.1,
+          "rangeBonus": 62,
+          "fireRateBonus": 1.55
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_32",
+        "name": "Standard Skill Tree Upgrade 32",
+        "description": "Boosts damage (+320%) and stats.",
+        "cost": "1e93",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.2,
+          "rangeBonus": 64,
+          "fireRateBonus": 1.6
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_33",
+        "name": "Standard Skill Tree Upgrade 33",
+        "description": "Boosts damage (+330%) and stats.",
+        "cost": "1e96",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.3000000000000003,
+          "rangeBonus": 66,
+          "fireRateBonus": 1.6500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_34",
+        "name": "Standard Skill Tree Upgrade 34",
+        "description": "Boosts damage (+340%) and stats.",
+        "cost": "1e99",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.4000000000000004,
+          "rangeBonus": 68,
+          "fireRateBonus": 1.7000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_35",
+        "name": "Standard Skill Tree Upgrade 35",
+        "description": "Boosts damage (+350%) and stats.",
+        "cost": "1e102",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.5,
+          "rangeBonus": 70,
+          "fireRateBonus": 1.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_36",
+        "name": "Standard Skill Tree Upgrade 36",
+        "description": "Boosts damage (+360%) and stats.",
+        "cost": "1e105",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.6,
+          "rangeBonus": 72,
+          "fireRateBonus": 1.8
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_37",
+        "name": "Standard Skill Tree Upgrade 37",
+        "description": "Boosts damage (+370%) and stats.",
+        "cost": "1e108",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.7,
+          "rangeBonus": 74,
+          "fireRateBonus": 1.85
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_38",
+        "name": "Standard Skill Tree Upgrade 38",
+        "description": "Boosts damage (+380%) and stats.",
+        "cost": "1e111",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.8000000000000003,
+          "rangeBonus": 76,
+          "fireRateBonus": 1.9000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_39",
+        "name": "Standard Skill Tree Upgrade 39",
+        "description": "Boosts damage (+390%) and stats.",
+        "cost": "1e114",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.9000000000000004,
+          "rangeBonus": 78,
+          "fireRateBonus": 1.9500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_40",
+        "name": "Standard Skill Tree Upgrade 40",
+        "description": "Boosts damage (+400%) and stats.",
+        "cost": "1e117",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4,
+          "rangeBonus": 80,
+          "fireRateBonus": 2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_41",
+        "name": "Standard Skill Tree Upgrade 41",
+        "description": "Boosts damage (+410%) and stats.",
+        "cost": "1e120",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.1000000000000005,
+          "rangeBonus": 82,
+          "fireRateBonus": 2.0500000000000003
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_42",
+        "name": "Standard Skill Tree Upgrade 42",
+        "description": "Boosts damage (+420%) and stats.",
+        "cost": "1e123",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.2,
+          "rangeBonus": 84,
+          "fireRateBonus": 2.1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_43",
+        "name": "Standard Skill Tree Upgrade 43",
+        "description": "Boosts damage (+430%) and stats.",
+        "cost": "1e126",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.3,
+          "rangeBonus": 86,
+          "fireRateBonus": 2.15
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_44",
+        "name": "Standard Skill Tree Upgrade 44",
+        "description": "Boosts damage (+440%) and stats.",
+        "cost": "1e129",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.4,
+          "rangeBonus": 88,
+          "fireRateBonus": 2.2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_45",
+        "name": "Standard Skill Tree Upgrade 45",
+        "description": "Boosts damage (+450%) and stats.",
+        "cost": "1e132",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.5,
+          "rangeBonus": 90,
+          "fireRateBonus": 2.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_46",
+        "name": "Standard Skill Tree Upgrade 46",
+        "description": "Boosts damage (+460%) and stats.",
+        "cost": "1e135",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.6000000000000005,
+          "rangeBonus": 92,
+          "fireRateBonus": 2.3000000000000003
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_47",
+        "name": "Standard Skill Tree Upgrade 47",
+        "description": "Boosts damage (+470%) and stats.",
+        "cost": "1e138",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.7,
+          "rangeBonus": 94,
+          "fireRateBonus": 2.35
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_48",
+        "name": "Standard Skill Tree Upgrade 48",
+        "description": "Boosts damage (+480%) and stats.",
+        "cost": "1e141",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.800000000000001,
+          "rangeBonus": 96,
+          "fireRateBonus": 2.4000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_49",
+        "name": "Standard Skill Tree Upgrade 49",
+        "description": "Boosts damage (+490%) and stats.",
+        "cost": "1e144",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.9,
+          "rangeBonus": 98,
+          "fireRateBonus": 2.45
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_50",
+        "name": "Standard Skill Tree Upgrade 50",
+        "description": "Boosts damage (+500%) and stats.",
+        "cost": "1e147",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 5,
+          "rangeBonus": 100,
+          "fireRateBonus": 2.5
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_1": {
+    "treeId": "prestige_1",
+    "name": "Crystal Mastery (Prestige 1)",
+    "currency": "crystals",
+    "skills": [
+      {
+        "id": "skill_prestige_1_1",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 1",
+        "description": "Boosts damage (+1,000%) and stats.",
+        "cost": "10",
+        "currency": "crystals",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 10,
+          "rangeBonus": 20,
+          "fireRateBonus": 0.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_2",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 2",
+        "description": "Boosts damage (+2,000%) and stats.",
+        "cost": "1e3",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 20,
+          "rangeBonus": 40,
+          "fireRateBonus": 0.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_3",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 3",
+        "description": "Boosts damage (+3,000%) and stats.",
+        "cost": "1e6",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 30.000000000000004,
+          "rangeBonus": 60,
+          "fireRateBonus": 0.7500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_4",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 4",
+        "description": "Boosts damage (+4,000%) and stats.",
+        "cost": "1e9",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 40,
+          "rangeBonus": 80,
+          "fireRateBonus": 1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_5",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 5",
+        "description": "Boosts damage (+5,000%) and stats.",
+        "cost": "1e12",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 50,
+          "rangeBonus": 100,
+          "fireRateBonus": 1.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_6",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 6",
+        "description": "Boosts damage (+6,000%) and stats.",
+        "cost": "1e15",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 60.00000000000001,
+          "rangeBonus": 120,
+          "fireRateBonus": 1.5000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_7",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 7",
+        "description": "Boosts damage (+7,000%) and stats.",
+        "cost": "1e18",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 70,
+          "rangeBonus": 140,
+          "fireRateBonus": 1.7500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_8",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 8",
+        "description": "Boosts damage (+8,000%) and stats.",
+        "cost": "1e21",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 80,
+          "rangeBonus": 160,
+          "fireRateBonus": 2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_9",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 9",
+        "description": "Boosts damage (+9,000%) and stats.",
+        "cost": "1e24",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 90,
+          "rangeBonus": 180,
+          "fireRateBonus": 2.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_10",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 10",
+        "description": "Boosts damage (+10,000%) and stats.",
+        "cost": "1e27",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 100,
+          "rangeBonus": 200,
+          "fireRateBonus": 2.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_11",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 11",
+        "description": "Boosts damage (+11,000%) and stats.",
+        "cost": "1e30",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 110.00000000000001,
+          "rangeBonus": 220,
+          "fireRateBonus": 2.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_12",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 12",
+        "description": "Boosts damage (+12,000%) and stats.",
+        "cost": "1e33",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 120.00000000000001,
+          "rangeBonus": 240,
+          "fireRateBonus": 3.0000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_13",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 13",
+        "description": "Boosts damage (+13,000%) and stats.",
+        "cost": "1e36",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 130,
+          "rangeBonus": 260,
+          "fireRateBonus": 3.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_14",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 14",
+        "description": "Boosts damage (+14,000%) and stats.",
+        "cost": "1e39",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 140,
+          "rangeBonus": 280,
+          "fireRateBonus": 3.5000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_15",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 15",
+        "description": "Boosts damage (+15,000%) and stats.",
+        "cost": "1e42",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 150,
+          "rangeBonus": 300,
+          "fireRateBonus": 3.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_16",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 16",
+        "description": "Boosts damage (+16,000%) and stats.",
+        "cost": "1e45",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 160,
+          "rangeBonus": 320,
+          "fireRateBonus": 4
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_17",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 17",
+        "description": "Boosts damage (+17,000%) and stats.",
+        "cost": "1e48",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 170.00000000000003,
+          "rangeBonus": 340,
+          "fireRateBonus": 4.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_18",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 18",
+        "description": "Boosts damage (+18,000%) and stats.",
+        "cost": "1e51",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 180,
+          "rangeBonus": 360,
+          "fireRateBonus": 4.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_19",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 19",
+        "description": "Boosts damage (+19,000%) and stats.",
+        "cost": "1e54",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 190,
+          "rangeBonus": 380,
+          "fireRateBonus": 4.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_20",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 20",
+        "description": "Boosts damage (+20,000%) and stats.",
+        "cost": "1e57",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 200,
+          "rangeBonus": 400,
+          "fireRateBonus": 5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_21",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 21",
+        "description": "Boosts damage (+21,000%) and stats.",
+        "cost": "1e60",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 210,
+          "rangeBonus": 420,
+          "fireRateBonus": 5.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_22",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 22",
+        "description": "Boosts damage (+22,000%) and stats.",
+        "cost": "1e63",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 220.00000000000003,
+          "rangeBonus": 440,
+          "fireRateBonus": 5.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_23",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 23",
+        "description": "Boosts damage (+23,000%) and stats.",
+        "cost": "1e66",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 230.00000000000003,
+          "rangeBonus": 460,
+          "fireRateBonus": 5.750000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_24",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 24",
+        "description": "Boosts damage (+24,000%) and stats.",
+        "cost": "1e69",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 240.00000000000003,
+          "rangeBonus": 480,
+          "fireRateBonus": 6.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_25",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 25",
+        "description": "Boosts damage (+25,000%) and stats.",
+        "cost": "1e72",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 250,
+          "rangeBonus": 500,
+          "fireRateBonus": 6.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_26",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 26",
+        "description": "Boosts damage (+26,000%) and stats.",
+        "cost": "1e75",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 260,
+          "rangeBonus": 520,
+          "fireRateBonus": 6.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_27",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 27",
+        "description": "Boosts damage (+27,000%) and stats.",
+        "cost": "1e78",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 270,
+          "rangeBonus": 540,
+          "fireRateBonus": 6.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_28",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 28",
+        "description": "Boosts damage (+28,000%) and stats.",
+        "cost": "1e81",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 280,
+          "rangeBonus": 560,
+          "fireRateBonus": 7.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_29",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 29",
+        "description": "Boosts damage (+29,000%) and stats.",
+        "cost": "1e84",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 290.00000000000006,
+          "rangeBonus": 580,
+          "fireRateBonus": 7.250000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_30",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 30",
+        "description": "Boosts damage (+30,000%) and stats.",
+        "cost": "1e87",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 300,
+          "rangeBonus": 600,
+          "fireRateBonus": 7.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_31",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 31",
+        "description": "Boosts damage (+31,000%) and stats.",
+        "cost": "1e90",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 310,
+          "rangeBonus": 620,
+          "fireRateBonus": 7.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_32",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 32",
+        "description": "Boosts damage (+32,000%) and stats.",
+        "cost": "1e93",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 320,
+          "rangeBonus": 640,
+          "fireRateBonus": 8
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_33",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 33",
+        "description": "Boosts damage (+33,000%) and stats.",
+        "cost": "1e96",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 330,
+          "rangeBonus": 660,
+          "fireRateBonus": 8.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_34",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 34",
+        "description": "Boosts damage (+34,000%) and stats.",
+        "cost": "1e99",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 340.00000000000006,
+          "rangeBonus": 680,
+          "fireRateBonus": 8.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_35",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 35",
+        "description": "Boosts damage (+35,000%) and stats.",
+        "cost": "1e102",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 350,
+          "rangeBonus": 700,
+          "fireRateBonus": 8.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_36",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 36",
+        "description": "Boosts damage (+36,000%) and stats.",
+        "cost": "1e105",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 360,
+          "rangeBonus": 720,
+          "fireRateBonus": 9
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_37",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 37",
+        "description": "Boosts damage (+37,000%) and stats.",
+        "cost": "1e108",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 370,
+          "rangeBonus": 740,
+          "fireRateBonus": 9.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_38",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 38",
+        "description": "Boosts damage (+38,000%) and stats.",
+        "cost": "1e111",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 380,
+          "rangeBonus": 760,
+          "fireRateBonus": 9.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_39",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 39",
+        "description": "Boosts damage (+39,000%) and stats.",
+        "cost": "1e114",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 390.00000000000006,
+          "rangeBonus": 780,
+          "fireRateBonus": 9.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_40",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 40",
+        "description": "Boosts damage (+40,000%) and stats.",
+        "cost": "1e117",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 400,
+          "rangeBonus": 800,
+          "fireRateBonus": 10
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_41",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 41",
+        "description": "Boosts damage (+41,000%) and stats.",
+        "cost": "1e120",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 410.00000000000006,
+          "rangeBonus": 820,
+          "fireRateBonus": 10.250000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_42",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 42",
+        "description": "Boosts damage (+42,000%) and stats.",
+        "cost": "1e123",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 420,
+          "rangeBonus": 840,
+          "fireRateBonus": 10.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_43",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 43",
+        "description": "Boosts damage (+43,000%) and stats.",
+        "cost": "1e126",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 430,
+          "rangeBonus": 860,
+          "fireRateBonus": 10.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_44",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 44",
+        "description": "Boosts damage (+44,000%) and stats.",
+        "cost": "1e129",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 440.00000000000006,
+          "rangeBonus": 880,
+          "fireRateBonus": 11
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_45",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 45",
+        "description": "Boosts damage (+45,000%) and stats.",
+        "cost": "1e132",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 450,
+          "rangeBonus": 900,
+          "fireRateBonus": 11.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_46",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 46",
+        "description": "Boosts damage (+46,000%) and stats.",
+        "cost": "1e135",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 460.00000000000006,
+          "rangeBonus": 920,
+          "fireRateBonus": 11.500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_47",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 47",
+        "description": "Boosts damage (+47,000%) and stats.",
+        "cost": "1e138",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 470,
+          "rangeBonus": 940,
+          "fireRateBonus": 11.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_48",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 48",
+        "description": "Boosts damage (+48,000%) and stats.",
+        "cost": "1e141",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 480.00000000000006,
+          "rangeBonus": 960,
+          "fireRateBonus": 12.000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_49",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 49",
+        "description": "Boosts damage (+49,000%) and stats.",
+        "cost": "1e144",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 490.00000000000006,
+          "rangeBonus": 980,
+          "fireRateBonus": 12.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_50",
+        "name": "Crystal Mastery (Prestige 1) Upgrade 50",
+        "description": "Boosts damage (+50,000%) and stats.",
+        "cost": "1e147",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 500,
+          "rangeBonus": 1000,
+          "fireRateBonus": 12.5
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_2": {
+    "treeId": "prestige_2",
+    "name": "Diamond Dominance (Prestige 2)",
+    "currency": "diamonds",
+    "skills": [
+      {
+        "id": "skill_prestige_2_1",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 1",
+        "description": "Boosts damage (+100,000%) and stats.",
+        "cost": "10",
+        "currency": "diamonds",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 1000,
+          "rangeBonus": 20,
+          "fireRateBonus": 0.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_2",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 2",
+        "description": "Boosts damage (+200,000%) and stats.",
+        "cost": "1e3",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2000,
+          "rangeBonus": 40,
+          "fireRateBonus": 0.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_3",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 3",
+        "description": "Boosts damage (+300,000%) and stats.",
+        "cost": "1e6",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3000.0000000000005,
+          "rangeBonus": 60,
+          "fireRateBonus": 0.7500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_4",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 4",
+        "description": "Boosts damage (+400,000%) and stats.",
+        "cost": "1e9",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4000,
+          "rangeBonus": 80,
+          "fireRateBonus": 1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_5",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 5",
+        "description": "Boosts damage (+500,000%) and stats.",
+        "cost": "1e12",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 5000,
+          "rangeBonus": 100,
+          "fireRateBonus": 1.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_6",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 6",
+        "description": "Boosts damage (+600,000%) and stats.",
+        "cost": "1e15",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 6000.000000000001,
+          "rangeBonus": 120,
+          "fireRateBonus": 1.5000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_7",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 7",
+        "description": "Boosts damage (+700,000%) and stats.",
+        "cost": "1e18",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 7000.000000000001,
+          "rangeBonus": 140,
+          "fireRateBonus": 1.7500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_8",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 8",
+        "description": "Boosts damage (+800,000%) and stats.",
+        "cost": "1e21",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 8000,
+          "rangeBonus": 160,
+          "fireRateBonus": 2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_9",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 9",
+        "description": "Boosts damage (+900,000%) and stats.",
+        "cost": "1e24",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 9000,
+          "rangeBonus": 180,
+          "fireRateBonus": 2.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_10",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 10",
+        "description": "Boosts damage (+1,000,000%) and stats.",
+        "cost": "1e27",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 10000,
+          "rangeBonus": 200,
+          "fireRateBonus": 2.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_11",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 11",
+        "description": "Boosts damage (+1,100,000%) and stats.",
+        "cost": "1e30",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 11000,
+          "rangeBonus": 220,
+          "fireRateBonus": 2.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_12",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 12",
+        "description": "Boosts damage (+1,200,000%) and stats.",
+        "cost": "1e33",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 12000.000000000002,
+          "rangeBonus": 240,
+          "fireRateBonus": 3.0000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_13",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 13",
+        "description": "Boosts damage (+1,300,000%) and stats.",
+        "cost": "1e36",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 13000,
+          "rangeBonus": 260,
+          "fireRateBonus": 3.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_14",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 14",
+        "description": "Boosts damage (+1,400,000%) and stats.",
+        "cost": "1e39",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 14000.000000000002,
+          "rangeBonus": 280,
+          "fireRateBonus": 3.5000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_15",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 15",
+        "description": "Boosts damage (+1,500,000%) and stats.",
+        "cost": "1e42",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 15000,
+          "rangeBonus": 300,
+          "fireRateBonus": 3.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_16",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 16",
+        "description": "Boosts damage (+1,600,000%) and stats.",
+        "cost": "1e45",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 16000,
+          "rangeBonus": 320,
+          "fireRateBonus": 4
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_17",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 17",
+        "description": "Boosts damage (+1,700,000%) and stats.",
+        "cost": "1e48",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 17000,
+          "rangeBonus": 340,
+          "fireRateBonus": 4.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_18",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 18",
+        "description": "Boosts damage (+1,800,000%) and stats.",
+        "cost": "1e51",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 18000,
+          "rangeBonus": 360,
+          "fireRateBonus": 4.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_19",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 19",
+        "description": "Boosts damage (+1,900,000%) and stats.",
+        "cost": "1e54",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 19000,
+          "rangeBonus": 380,
+          "fireRateBonus": 4.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_20",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 20",
+        "description": "Boosts damage (+2,000,000%) and stats.",
+        "cost": "1e57",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 20000,
+          "rangeBonus": 400,
+          "fireRateBonus": 5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_21",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 21",
+        "description": "Boosts damage (+2,100,000%) and stats.",
+        "cost": "1e60",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 21000,
+          "rangeBonus": 420,
+          "fireRateBonus": 5.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_22",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 22",
+        "description": "Boosts damage (+2,200,000%) and stats.",
+        "cost": "1e63",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 22000,
+          "rangeBonus": 440,
+          "fireRateBonus": 5.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_23",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 23",
+        "description": "Boosts damage (+2,300,000%) and stats.",
+        "cost": "1e66",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 23000.000000000004,
+          "rangeBonus": 460,
+          "fireRateBonus": 5.750000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_24",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 24",
+        "description": "Boosts damage (+2,400,000%) and stats.",
+        "cost": "1e69",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 24000.000000000004,
+          "rangeBonus": 480,
+          "fireRateBonus": 6.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_25",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 25",
+        "description": "Boosts damage (+2,500,000%) and stats.",
+        "cost": "1e72",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 25000,
+          "rangeBonus": 500,
+          "fireRateBonus": 6.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_26",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 26",
+        "description": "Boosts damage (+2,600,000%) and stats.",
+        "cost": "1e75",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 26000,
+          "rangeBonus": 520,
+          "fireRateBonus": 6.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_27",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 27",
+        "description": "Boosts damage (+2,700,000%) and stats.",
+        "cost": "1e78",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 27000,
+          "rangeBonus": 540,
+          "fireRateBonus": 6.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_28",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 28",
+        "description": "Boosts damage (+2,800,000%) and stats.",
+        "cost": "1e81",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 28000.000000000004,
+          "rangeBonus": 560,
+          "fireRateBonus": 7.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_29",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 29",
+        "description": "Boosts damage (+2,900,000%) and stats.",
+        "cost": "1e84",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 29000.000000000004,
+          "rangeBonus": 580,
+          "fireRateBonus": 7.250000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_30",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 30",
+        "description": "Boosts damage (+3,000,000%) and stats.",
+        "cost": "1e87",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 30000,
+          "rangeBonus": 600,
+          "fireRateBonus": 7.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_31",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 31",
+        "description": "Boosts damage (+3,100,000%) and stats.",
+        "cost": "1e90",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 31000,
+          "rangeBonus": 620,
+          "fireRateBonus": 7.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_32",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 32",
+        "description": "Boosts damage (+3,200,000%) and stats.",
+        "cost": "1e93",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 32000,
+          "rangeBonus": 640,
+          "fireRateBonus": 8
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_33",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 33",
+        "description": "Boosts damage (+3,300,000%) and stats.",
+        "cost": "1e96",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 33000,
+          "rangeBonus": 660,
+          "fireRateBonus": 8.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_34",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 34",
+        "description": "Boosts damage (+3,400,000%) and stats.",
+        "cost": "1e99",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 34000,
+          "rangeBonus": 680,
+          "fireRateBonus": 8.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_35",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 35",
+        "description": "Boosts damage (+3,500,000%) and stats.",
+        "cost": "1e102",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 35000,
+          "rangeBonus": 700,
+          "fireRateBonus": 8.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_36",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 36",
+        "description": "Boosts damage (+3,600,000%) and stats.",
+        "cost": "1e105",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 36000,
+          "rangeBonus": 720,
+          "fireRateBonus": 9
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_37",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 37",
+        "description": "Boosts damage (+3,700,000%) and stats.",
+        "cost": "1e108",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 37000,
+          "rangeBonus": 740,
+          "fireRateBonus": 9.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_38",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 38",
+        "description": "Boosts damage (+3,800,000%) and stats.",
+        "cost": "1e111",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 38000,
+          "rangeBonus": 760,
+          "fireRateBonus": 9.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_39",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 39",
+        "description": "Boosts damage (+3,900,000%) and stats.",
+        "cost": "1e114",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 39000,
+          "rangeBonus": 780,
+          "fireRateBonus": 9.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_40",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 40",
+        "description": "Boosts damage (+4,000,000%) and stats.",
+        "cost": "1e117",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 40000,
+          "rangeBonus": 800,
+          "fireRateBonus": 10
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_41",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 41",
+        "description": "Boosts damage (+4,100,000%) and stats.",
+        "cost": "1e120",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 41000.00000000001,
+          "rangeBonus": 820,
+          "fireRateBonus": 10.250000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_42",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 42",
+        "description": "Boosts damage (+4,200,000%) and stats.",
+        "cost": "1e123",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 42000,
+          "rangeBonus": 840,
+          "fireRateBonus": 10.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_43",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 43",
+        "description": "Boosts damage (+4,300,000%) and stats.",
+        "cost": "1e126",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 43000,
+          "rangeBonus": 860,
+          "fireRateBonus": 10.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_44",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 44",
+        "description": "Boosts damage (+4,400,000%) and stats.",
+        "cost": "1e129",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 44000,
+          "rangeBonus": 880,
+          "fireRateBonus": 11
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_45",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 45",
+        "description": "Boosts damage (+4,500,000%) and stats.",
+        "cost": "1e132",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 45000,
+          "rangeBonus": 900,
+          "fireRateBonus": 11.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_46",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 46",
+        "description": "Boosts damage (+4,600,000%) and stats.",
+        "cost": "1e135",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 46000.00000000001,
+          "rangeBonus": 920,
+          "fireRateBonus": 11.500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_47",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 47",
+        "description": "Boosts damage (+4,700,000%) and stats.",
+        "cost": "1e138",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 47000,
+          "rangeBonus": 940,
+          "fireRateBonus": 11.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_48",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 48",
+        "description": "Boosts damage (+4,800,000%) and stats.",
+        "cost": "1e141",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 48000.00000000001,
+          "rangeBonus": 960,
+          "fireRateBonus": 12.000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_49",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 49",
+        "description": "Boosts damage (+4,900,000%) and stats.",
+        "cost": "1e144",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 49000,
+          "rangeBonus": 980,
+          "fireRateBonus": 12.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_50",
+        "name": "Diamond Dominance (Prestige 2) Upgrade 50",
+        "description": "Boosts damage (+5,000,000%) and stats.",
+        "cost": "1e147",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 50000,
+          "rangeBonus": 1000,
+          "fireRateBonus": 12.5
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_3": {
+    "treeId": "prestige_3",
+    "name": "Dark Orb Transcendence (Prestige 3)",
+    "currency": "dark_orbs",
+    "skills": [
+      {
+        "id": "skill_prestige_3_1",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 1",
+        "description": "Boosts damage (+10,000,000%) and stats.",
+        "cost": "10",
+        "currency": "dark_orbs",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 100000,
+          "rangeBonus": 20,
+          "fireRateBonus": 0.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_2",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 2",
+        "description": "Boosts damage (+20,000,000%) and stats.",
+        "cost": "1e3",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 200000,
+          "rangeBonus": 40,
+          "fireRateBonus": 0.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_3",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 3",
+        "description": "Boosts damage (+30,000,000%) and stats.",
+        "cost": "1e6",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 300000.00000000006,
+          "rangeBonus": 60,
+          "fireRateBonus": 0.7500000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_4",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 4",
+        "description": "Boosts damage (+40,000,000%) and stats.",
+        "cost": "1e9",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_1"
+        ],
+        "statBonus": {
+          "damageMultiplier": 400000,
+          "rangeBonus": 80,
+          "fireRateBonus": 1
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_5",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 5",
+        "description": "Boosts damage (+50,000,000%) and stats.",
+        "cost": "1e12",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 500000,
+          "rangeBonus": 100,
+          "fireRateBonus": 1.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_6",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 6",
+        "description": "Boosts damage (+60,000,000%) and stats.",
+        "cost": "1e15",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_2"
+        ],
+        "statBonus": {
+          "damageMultiplier": 600000.0000000001,
+          "rangeBonus": 120,
+          "fireRateBonus": 1.5000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_7",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 7",
+        "description": "Boosts damage (+70,000,000%) and stats.",
+        "cost": "1e18",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 700000.0000000001,
+          "rangeBonus": 140,
+          "fireRateBonus": 1.7500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_8",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 8",
+        "description": "Boosts damage (+80,000,000%) and stats.",
+        "cost": "1e21",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_3"
+        ],
+        "statBonus": {
+          "damageMultiplier": 800000,
+          "rangeBonus": 160,
+          "fireRateBonus": 2
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_9",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 9",
+        "description": "Boosts damage (+90,000,000%) and stats.",
+        "cost": "1e24",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 900000,
+          "rangeBonus": 180,
+          "fireRateBonus": 2.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_10",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 10",
+        "description": "Boosts damage (+100,000,000%) and stats.",
+        "cost": "1e27",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_4"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1000000,
+          "rangeBonus": 200,
+          "fireRateBonus": 2.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_11",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 11",
+        "description": "Boosts damage (+110,000,000%) and stats.",
+        "cost": "1e30",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1100000,
+          "rangeBonus": 220,
+          "fireRateBonus": 2.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_12",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 12",
+        "description": "Boosts damage (+120,000,000%) and stats.",
+        "cost": "1e33",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_5"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1200000.0000000002,
+          "rangeBonus": 240,
+          "fireRateBonus": 3.0000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_13",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 13",
+        "description": "Boosts damage (+130,000,000%) and stats.",
+        "cost": "1e36",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1300000,
+          "rangeBonus": 260,
+          "fireRateBonus": 3.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_14",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 14",
+        "description": "Boosts damage (+140,000,000%) and stats.",
+        "cost": "1e39",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_6"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1400000.0000000002,
+          "rangeBonus": 280,
+          "fireRateBonus": 3.5000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_15",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 15",
+        "description": "Boosts damage (+150,000,000%) and stats.",
+        "cost": "1e42",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1500000,
+          "rangeBonus": 300,
+          "fireRateBonus": 3.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_16",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 16",
+        "description": "Boosts damage (+160,000,000%) and stats.",
+        "cost": "1e45",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_7"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1600000,
+          "rangeBonus": 320,
+          "fireRateBonus": 4
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_17",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 17",
+        "description": "Boosts damage (+170,000,000%) and stats.",
+        "cost": "1e48",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1700000.0000000002,
+          "rangeBonus": 340,
+          "fireRateBonus": 4.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_18",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 18",
+        "description": "Boosts damage (+180,000,000%) and stats.",
+        "cost": "1e51",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_8"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1800000,
+          "rangeBonus": 360,
+          "fireRateBonus": 4.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_19",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 19",
+        "description": "Boosts damage (+190,000,000%) and stats.",
+        "cost": "1e54",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1900000.0000000002,
+          "rangeBonus": 380,
+          "fireRateBonus": 4.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_20",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 20",
+        "description": "Boosts damage (+200,000,000%) and stats.",
+        "cost": "1e57",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_9"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2000000,
+          "rangeBonus": 400,
+          "fireRateBonus": 5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_21",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 21",
+        "description": "Boosts damage (+210,000,000%) and stats.",
+        "cost": "1e60",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2100000,
+          "rangeBonus": 420,
+          "fireRateBonus": 5.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_22",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 22",
+        "description": "Boosts damage (+220,000,000%) and stats.",
+        "cost": "1e63",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_10"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2200000,
+          "rangeBonus": 440,
+          "fireRateBonus": 5.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_23",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 23",
+        "description": "Boosts damage (+230,000,000%) and stats.",
+        "cost": "1e66",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2300000.0000000005,
+          "rangeBonus": 460,
+          "fireRateBonus": 5.750000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_24",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 24",
+        "description": "Boosts damage (+240,000,000%) and stats.",
+        "cost": "1e69",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_11"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2400000.0000000005,
+          "rangeBonus": 480,
+          "fireRateBonus": 6.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_25",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 25",
+        "description": "Boosts damage (+250,000,000%) and stats.",
+        "cost": "1e72",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2500000,
+          "rangeBonus": 500,
+          "fireRateBonus": 6.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_26",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 26",
+        "description": "Boosts damage (+260,000,000%) and stats.",
+        "cost": "1e75",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_12"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2600000,
+          "rangeBonus": 520,
+          "fireRateBonus": 6.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_27",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 27",
+        "description": "Boosts damage (+270,000,000%) and stats.",
+        "cost": "1e78",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2700000,
+          "rangeBonus": 540,
+          "fireRateBonus": 6.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_28",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 28",
+        "description": "Boosts damage (+280,000,000%) and stats.",
+        "cost": "1e81",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_13"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2800000.0000000005,
+          "rangeBonus": 560,
+          "fireRateBonus": 7.000000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_29",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 29",
+        "description": "Boosts damage (+290,000,000%) and stats.",
+        "cost": "1e84",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2900000.0000000005,
+          "rangeBonus": 580,
+          "fireRateBonus": 7.250000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_30",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 30",
+        "description": "Boosts damage (+300,000,000%) and stats.",
+        "cost": "1e87",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_14"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3000000,
+          "rangeBonus": 600,
+          "fireRateBonus": 7.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_31",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 31",
+        "description": "Boosts damage (+310,000,000%) and stats.",
+        "cost": "1e90",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3100000,
+          "rangeBonus": 620,
+          "fireRateBonus": 7.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_32",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 32",
+        "description": "Boosts damage (+320,000,000%) and stats.",
+        "cost": "1e93",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_15"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3200000,
+          "rangeBonus": 640,
+          "fireRateBonus": 8
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_33",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 33",
+        "description": "Boosts damage (+330,000,000%) and stats.",
+        "cost": "1e96",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3300000.0000000005,
+          "rangeBonus": 660,
+          "fireRateBonus": 8.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_34",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 34",
+        "description": "Boosts damage (+340,000,000%) and stats.",
+        "cost": "1e99",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_16"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3400000.0000000005,
+          "rangeBonus": 680,
+          "fireRateBonus": 8.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_35",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 35",
+        "description": "Boosts damage (+350,000,000%) and stats.",
+        "cost": "1e102",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3500000,
+          "rangeBonus": 700,
+          "fireRateBonus": 8.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_36",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 36",
+        "description": "Boosts damage (+360,000,000%) and stats.",
+        "cost": "1e105",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_17"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3600000,
+          "rangeBonus": 720,
+          "fireRateBonus": 9
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_37",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 37",
+        "description": "Boosts damage (+370,000,000%) and stats.",
+        "cost": "1e108",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3700000,
+          "rangeBonus": 740,
+          "fireRateBonus": 9.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_38",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 38",
+        "description": "Boosts damage (+380,000,000%) and stats.",
+        "cost": "1e111",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_18"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3800000.0000000005,
+          "rangeBonus": 760,
+          "fireRateBonus": 9.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_39",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 39",
+        "description": "Boosts damage (+390,000,000%) and stats.",
+        "cost": "1e114",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3900000.0000000005,
+          "rangeBonus": 780,
+          "fireRateBonus": 9.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_40",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 40",
+        "description": "Boosts damage (+400,000,000%) and stats.",
+        "cost": "1e117",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_19"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4000000,
+          "rangeBonus": 800,
+          "fireRateBonus": 10
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_41",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 41",
+        "description": "Boosts damage (+410,000,000%) and stats.",
+        "cost": "1e120",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4100000.0000000005,
+          "rangeBonus": 820,
+          "fireRateBonus": 10.250000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_42",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 42",
+        "description": "Boosts damage (+420,000,000%) and stats.",
+        "cost": "1e123",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_20"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4200000,
+          "rangeBonus": 840,
+          "fireRateBonus": 10.5
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_43",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 43",
+        "description": "Boosts damage (+430,000,000%) and stats.",
+        "cost": "1e126",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4300000,
+          "rangeBonus": 860,
+          "fireRateBonus": 10.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_44",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 44",
+        "description": "Boosts damage (+440,000,000%) and stats.",
+        "cost": "1e129",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_21"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4400000,
+          "rangeBonus": 880,
+          "fireRateBonus": 11
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_45",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 45",
+        "description": "Boosts damage (+450,000,000%) and stats.",
+        "cost": "1e132",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4500000,
+          "rangeBonus": 900,
+          "fireRateBonus": 11.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_46",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 46",
+        "description": "Boosts damage (+460,000,000%) and stats.",
+        "cost": "1e135",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_22"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4600000.000000001,
+          "rangeBonus": 920,
+          "fireRateBonus": 11.500000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_47",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 47",
+        "description": "Boosts damage (+470,000,000%) and stats.",
+        "cost": "1e138",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4700000,
+          "rangeBonus": 940,
+          "fireRateBonus": 11.75
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_48",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 48",
+        "description": "Boosts damage (+480,000,000%) and stats.",
+        "cost": "1e141",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_23"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4800000.000000001,
+          "rangeBonus": 960,
+          "fireRateBonus": 12.000000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_49",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 49",
+        "description": "Boosts damage (+490,000,000%) and stats.",
+        "cost": "1e144",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4900000,
+          "rangeBonus": 980,
+          "fireRateBonus": 12.25
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_50",
+        "name": "Dark Orb Transcendence (Prestige 3) Upgrade 50",
+        "description": "Boosts damage (+500,000,000%) and stats.",
+        "cost": "1e147",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_24"
+        ],
+        "statBonus": {
+          "damageMultiplier": 5000000,
+          "rangeBonus": 1000,
+          "fireRateBonus": 12.5
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  }
+}

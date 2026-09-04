@@ -1,0 +1,8 @@
+{
+  "editorPasswordHash": "admin",
+  "prestige": {
+    "tier1Cost": "1e300",
+    "tier2Cost": "1e300",
+    "tier3Cost": "1e300"
+  }
+}
