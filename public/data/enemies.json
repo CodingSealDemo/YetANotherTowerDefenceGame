@@ -1,0 +1,80 @@
+[
+  {
+    "id": "normal",
+    "name": "Normal Scout",
+    "health": "100",
+    "speed": 100,
+    "reward": "20",
+    "damage": "10",
+    "isReinforced": false,
+    "isStealth": false,
+    "splitsInto": null,
+    "splitCount": 0,
+    "sprite": "assets/enemy_normal.png"
+  },
+  {
+    "id": "fast",
+    "name": "Fast Sprinter",
+    "health": "60",
+    "speed": 180,
+    "reward": "15",
+    "damage": "5",
+    "isReinforced": false,
+    "isStealth": false,
+    "splitsInto": null,
+    "splitCount": 0,
+    "sprite": "assets/enemy_fast.png"
+  },
+  {
+    "id": "reinforced",
+    "name": "Armored Tank",
+    "health": "400",
+    "speed": 60,
+    "reward": "50",
+    "damage": "25",
+    "isReinforced": true,
+    "isStealth": false,
+    "splitsInto": null,
+    "splitCount": 0,
+    "sprite": "assets/enemy_reinforced.png"
+  },
+  {
+    "id": "stealth",
+    "name": "Phantom Ghost",
+    "health": "150",
+    "speed": 110,
+    "reward": "40",
+    "damage": "15",
+    "isReinforced": false,
+    "isStealth": true,
+    "splitsInto": null,
+    "splitCount": 0,
+    "sprite": "assets/enemy_stealth.png"
+  },
+  {
+    "id": "big",
+    "name": "Goliath Titan",
+    "health": "1200",
+    "speed": 50,
+    "reward": "150",
+    "damage": "50",
+    "isReinforced": false,
+    "isStealth": false,
+    "splitsInto": "normal",
+    "splitCount": 3,
+    "sprite": "assets/enemy_big.png"
+  },
+  {
+    "id": "super_big",
+    "name": "Colossal Dreadnought",
+    "health": "5000",
+    "speed": 35,
+    "reward": "500",
+    "damage": "100",
+    "isReinforced": true,
+    "isStealth": false,
+    "splitsInto": "big",
+    "splitCount": 2,
+    "sprite": "assets/enemy_super_big.png"
+  }
+]
