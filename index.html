@@ -80,6 +80,11 @@
       background-color: #222;
     }
 
+    :focus-visible {
+      outline: 2px solid #00bcd4;
+      outline-offset: 2px;
+    }
+
     main {
       flex: 1;
       position: relative;
@@ -296,12 +301,12 @@
     </div>
   </header>
 
-  <nav class="nav-tabs">
-    <button class="tab-btn active" data-tab="game-tab">Game</button>
-    <button class="tab-btn" data-tab="skills-tab">Skill Trees</button>
-    <button class="tab-btn" data-tab="editor-tab">Level & Stats Editor</button>
-    <button class="tab-btn" data-tab="skills-editor-tab">Skill Trees Editor</button>
-    <button class="tab-btn" data-tab="options-tab">Save & Options</button>
+  <nav class="nav-tabs" role="tablist" aria-label="Main Navigation">
+    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="game-tab" id="tab-game" data-tab="game-tab">Game</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="skills-tab" id="tab-skills" data-tab="skills-tab">Skill Trees</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="editor-tab" id="tab-editor" data-tab="editor-tab">Level & Stats Editor</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="skills-editor-tab" id="tab-skills-editor" data-tab="skills-editor-tab">Skill Trees Editor</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="options-tab" id="tab-options" data-tab="options-tab">Save & Options</button>
   </nav>
 
   <main>

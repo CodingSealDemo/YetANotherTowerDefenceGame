@@ -119,11 +119,16 @@ class App {
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        const targetTab = (e.currentTarget as HTMLButtonElement).dataset.tab;
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        const targetBtn = e.currentTarget as HTMLButtonElement;
+        const targetTab = targetBtn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
 
-        (e.currentTarget as HTMLButtonElement).classList.add('active');
+        targetBtn.classList.add('active');
+        targetBtn.setAttribute('aria-selected', 'true');
         document.getElementById(targetTab!)?.classList.add('active');
 
         if (targetTab === 'skills-tab') {
@@ -433,16 +438,31 @@ class App {
     const unlocked = this.progression.getUnlockedTowers();
     this.towers.forEach(t => {
       if (unlocked.includes(t.id)) {
+        const isSelected = this.selectedTowerType === t.id;
         const card = document.createElement('div');
-        card.className = `tower-card ${this.selectedTowerType === t.id ? 'selected' : ''}`;
+        card.className = `tower-card ${isSelected ? 'selected' : ''}`;
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+        card.setAttribute('aria-label', `${t.name}, Cost: ${new BigNumber(t.cost).toFormattedString()} coins`);
         card.innerHTML = `
           <strong>${t.name}</strong>
           <div>🪙 ${new BigNumber(t.cost).toFormattedString()}</div>
         `;
-        card.addEventListener('click', () => {
+
+        const selectTower = () => {
           this.selectedTowerType = t.id;
           this.updateTowerArsenalUI();
+        };
+
+        card.addEventListener('click', selectTower);
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            selectTower();
+          }
         });
+
         list.appendChild(card);
       }
     });
