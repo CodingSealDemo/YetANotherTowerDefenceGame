@@ -30,6 +30,11 @@ export class GameEngine {
   private purchasedSkills: Set<string> = new Set();
   private skillDefs: Map<string, SkillDefinition> = new Map();
 
+  // Cached skill stat bonuses to avoid per-frame calculations & allocations
+  private cachedDamageMultiplier: BigNumber = new BigNumber(1);
+  private cachedFireRateBonus: number = 0;
+  private cachedRangeBonus: number = 0;
+
   private currentWaveEnemiesToSpawn: { enemyId: string; interval: number }[] = [];
   private nextSpawnTime: number = 0;
   private enemyIdCounter: number = 0;
@@ -58,6 +63,7 @@ export class GameEngine {
       this.activeEnemies = [];
       this.placedTowers = [];
       this.purchasedSkills = new Set(purchasedSkills);
+      this.recalculateSkillStats();
       this.currentWaveEnemiesToSpawn = [];
       this.nextSpawnTime = 0;
 
@@ -224,32 +230,7 @@ export class GameEngine {
     this.activeEnemies.push(activeEnemy);
   }
 
-  private updateStealthReveals(): void {
-    const detectorRanges: { x: number; y: number; range: number }[] = [];
-    for (const tower of this.placedTowers) {
-      const def = this.towerDefs.get(tower.typeId);
-      if (def && def.canDetectStealth) {
-        detectorRanges.push({ x: tower.x, y: tower.y, range: def.range });
-      }
-    }
-
-    for (const enemy of this.activeEnemies) {
-      if (enemy.isStealth) {
-        let revealed = false;
-        for (const det of detectorRanges) {
-          const dx = enemy.x - det.x;
-          const dy = enemy.y - det.y;
-          if (dx * dx + dy * dy <= det.range * det.range) {
-            revealed = true;
-            break;
-          }
-        }
-        enemy.isRevealed = revealed;
-      }
-    }
-  }
-
-  private updateTowerAttacks(currentTime: number): void {
+  private recalculateSkillStats(): void {
     let damageMultiplier = new BigNumber(1);
     let fireRateBonus = 0;
     let rangeBonus = 0;
@@ -263,7 +244,56 @@ export class GameEngine {
       }
     });
 
-    for (const tower of this.placedTowers) {
+    this.cachedDamageMultiplier = damageMultiplier;
+    this.cachedFireRateBonus = fireRateBonus;
+    this.cachedRangeBonus = rangeBonus;
+  }
+
+  private updateStealthReveals(): void {
+    // Fast path: skip scanning detector towers if there are no stealth enemies active
+    let hasStealth = false;
+    for (let i = 0; i < this.activeEnemies.length; i++) {
+      if (this.activeEnemies[i].isStealth) {
+        hasStealth = true;
+        break;
+      }
+    }
+    if (!hasStealth) return;
+
+    const detectorRanges: { x: number; y: number; rangeSq: number }[] = [];
+    for (let i = 0; i < this.placedTowers.length; i++) {
+      const tower = this.placedTowers[i];
+      const def = this.towerDefs.get(tower.typeId);
+      if (def && def.canDetectStealth) {
+        detectorRanges.push({ x: tower.x, y: tower.y, rangeSq: def.range * def.range });
+      }
+    }
+
+    for (let i = 0; i < this.activeEnemies.length; i++) {
+      const enemy = this.activeEnemies[i];
+      if (enemy.isStealth) {
+        let revealed = false;
+        for (let j = 0; j < detectorRanges.length; j++) {
+          const det = detectorRanges[j];
+          const dx = enemy.x - det.x;
+          const dy = enemy.y - det.y;
+          if (dx * dx + dy * dy <= det.rangeSq) {
+            revealed = true;
+            break;
+          }
+        }
+        enemy.isRevealed = revealed;
+      }
+    }
+  }
+
+  private updateTowerAttacks(currentTime: number): void {
+    const damageMultiplier = this.cachedDamageMultiplier;
+    const fireRateBonus = this.cachedFireRateBonus;
+    const rangeBonus = this.cachedRangeBonus;
+
+    for (let i = 0; i < this.placedTowers.length; i++) {
+      const tower = this.placedTowers[i];
       const def = this.towerDefs.get(tower.typeId);
       if (!def) continue;
 
@@ -282,8 +312,8 @@ export class GameEngine {
         const spreadFactor = 45 / Math.max(10, tower.spreadAngle);
         const finalDmg = baseDmg.mul(spreadFactor);
 
-        for (const target of targets) {
-          this.damageEnemy(target, finalDmg, def.canPierceArmor);
+        for (let j = 0; j < targets.length; j++) {
+          this.damageEnemy(targets[j], finalDmg, def.canPierceArmor);
         }
 
         this.eventBus.emit('engine:towerFired', { tower, targetsCount: targets.length });
@@ -295,17 +325,21 @@ export class GameEngine {
     const targets: ActiveEnemy[] = [];
     const dirRad = (tower.directionAngle * Math.PI) / 180;
     const halfSpreadRad = ((tower.spreadAngle / 2) * Math.PI) / 180;
+    const rangeSq = range * range;
 
-    for (const enemy of this.activeEnemies) {
-      if (enemy.isStealth && !enemy.isRevealed) {
-        const def = this.towerDefs.get(tower.typeId);
-        if (!def || !def.canDetectStealth) continue;
+    const towerDef = this.towerDefs.get(tower.typeId);
+    const canDetectStealth = towerDef ? towerDef.canDetectStealth : false;
+
+    for (let i = 0; i < this.activeEnemies.length; i++) {
+      const enemy = this.activeEnemies[i];
+      if (enemy.isStealth && !enemy.isRevealed && !canDetectStealth) {
+        continue;
       }
 
       const dx = enemy.x - tower.x;
       const dy = enemy.y - tower.y;
       const distSq = dx * dx + dy * dy;
-      if (distSq > range * range) continue;
+      if (distSq > rangeSq) continue;
 
       const angleToEnemy = Math.atan2(dy, dx);
       let angleDiff = angleToEnemy - dirRad;
