@@ -244,6 +244,9 @@ describe('EditorManager', () => {
 
   it('requires password authentication before modification', () => {
     expect(editor.authenticate('wrong')).toBe(false);
+    expect(editor.authenticate('admin124')).toBe(false); // same length mismatch
+    expect(editor.authenticate('')).toBe(false);
+    expect(editor.authenticate(null as any)).toBe(false);
     expect(editor.isAuth()).toBe(false);
 
     expect(editor.authenticate('admin123')).toBe(true);
