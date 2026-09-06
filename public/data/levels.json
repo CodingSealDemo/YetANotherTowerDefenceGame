@@ -1,0 +1,276 @@
+[
+  {
+    "id": 1,
+    "name": "Verdant Outpost",
+    "baseHealth": "100",
+    "rewardCoins": "200",
+    "pathPoints": [
+      {
+        "x": 0,
+        "y": 250
+      },
+      {
+        "x": 250,
+        "y": 250
+      },
+      {
+        "x": 250,
+        "y": 450
+      },
+      {
+        "x": 550,
+        "y": 450
+      },
+      {
+        "x": 550,
+        "y": 150
+      },
+      {
+        "x": 800,
+        "y": 150
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "normal",
+        "count": 10,
+        "interval": 1
+      },
+      {
+        "enemyId": "fast",
+        "count": 8,
+        "interval": 0.8
+      },
+      {
+        "enemyId": "normal",
+        "count": 15,
+        "interval": 0.6
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shaded Ravine",
+    "baseHealth": "150",
+    "rewardCoins": "500",
+    "pathPoints": [
+      {
+        "x": 0,
+        "y": 100
+      },
+      {
+        "x": 400,
+        "y": 100
+      },
+      {
+        "x": 200,
+        "y": 500
+      },
+      {
+        "x": 600,
+        "y": 500
+      },
+      {
+        "x": 800,
+        "y": 300
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "normal",
+        "count": 15,
+        "interval": 0.8
+      },
+      {
+        "enemyId": "stealth",
+        "count": 8,
+        "interval": 1.2
+      },
+      {
+        "enemyId": "fast",
+        "count": 20,
+        "interval": 0.5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Iron Citadel",
+    "baseHealth": "200",
+    "rewardCoins": "1200",
+    "pathPoints": [
+      {
+        "x": 400,
+        "y": 0
+      },
+      {
+        "x": 400,
+        "y": 200
+      },
+      {
+        "x": 150,
+        "y": 200
+      },
+      {
+        "x": 150,
+        "y": 450
+      },
+      {
+        "x": 650,
+        "y": 450
+      },
+      {
+        "x": 650,
+        "y": 600
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "reinforced",
+        "count": 10,
+        "interval": 1
+      },
+      {
+        "enemyId": "stealth",
+        "count": 12,
+        "interval": 0.9
+      },
+      {
+        "enemyId": "big",
+        "count": 4,
+        "interval": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Obsidian Ridge",
+    "baseHealth": "300",
+    "rewardCoins": "5000",
+    "pathPoints": [
+      {
+        "x": 0,
+        "y": 500
+      },
+      {
+        "x": 300,
+        "y": 100
+      },
+      {
+        "x": 500,
+        "y": 500
+      },
+      {
+        "x": 800,
+        "y": 200
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "reinforced",
+        "count": 20,
+        "interval": 0.7
+      },
+      {
+        "enemyId": "big",
+        "count": 8,
+        "interval": 1.5
+      },
+      {
+        "enemyId": "super_big",
+        "count": 2,
+        "interval": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Crystal Abyss",
+    "baseHealth": "500",
+    "rewardCoins": "25000",
+    "pathPoints": [
+      {
+        "x": 0,
+        "y": 300
+      },
+      {
+        "x": 200,
+        "y": 100
+      },
+      {
+        "x": 400,
+        "y": 500
+      },
+      {
+        "x": 600,
+        "y": 100
+      },
+      {
+        "x": 800,
+        "y": 300
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "stealth",
+        "count": 25,
+        "interval": 0.5
+      },
+      {
+        "enemyId": "reinforced",
+        "count": 25,
+        "interval": 0.5
+      },
+      {
+        "enemyId": "super_big",
+        "count": 5,
+        "interval": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Maelstrom Core",
+    "baseHealth": "1000",
+    "rewardCoins": "1e6",
+    "pathPoints": [
+      {
+        "x": 400,
+        "y": 0
+      },
+      {
+        "x": 100,
+        "y": 150
+      },
+      {
+        "x": 700,
+        "y": 300
+      },
+      {
+        "x": 100,
+        "y": 450
+      },
+      {
+        "x": 400,
+        "y": 600
+      }
+    ],
+    "waves": [
+      {
+        "enemyId": "big",
+        "count": 20,
+        "interval": 0.8
+      },
+      {
+        "enemyId": "super_big",
+        "count": 10,
+        "interval": 1.5
+      },
+      {
+        "enemyId": "fast",
+        "count": 100,
+        "interval": 0.1
+      }
+    ]
+  }
+]

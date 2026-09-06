@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YetAnotherTowerDefenceGame</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+    }
+
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #333;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    .currencies {
+      display: flex;
+      gap: 15px;
+      font-size: 0.95rem;
+    }
+
+    .curr-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #2a2a2a;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #444;
+    }
+
+    .nav-tabs {
+      display: flex;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    .tab-btn {
+      padding: 10px 20px;
+      background: none;
+      border: none;
+      color: #888;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: #fff;
+      background-color: #252525;
+    }
+
+    .tab-btn.active {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      background-color: #222;
+    }
+
+    main {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tab-content {
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+    }
+
+    .tab-content.active {
+      display: flex;
+    }
+
+    /* Game Tab Layout */
+    #game-tab {
+      gap: 15px;
+    }
+
+    .canvas-container {
+      flex: 1;
+      position: relative;
+      background-color: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #333;
+    }
+
+    canvas {
+      width: 800px;
+      height: 600px;
+      background-color: #1e381e;
+      cursor: crosshair;
+    }
+
+    .game-sidebar {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      overflow-y: auto;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      color: #00bcd4;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+    }
+
+    .tower-selection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .tower-card {
+      background-color: #2a2a2a;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4px;
+      transition: all 0.2s;
+    }
+
+    .tower-card:hover {
+      border-color: #00bcd4;
+      background-color: #333;
+    }
+
+    .tower-card.selected {
+      border-color: #00bcd4;
+      background-color: #003344;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      background-color: #00bcd4;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #00acc1;
+    }
+
+    .btn-danger {
+      background-color: #e53935;
+      color: #fff;
+    }
+
+    .btn-danger:hover {
+      background-color: #d32f2f;
+    }
+
+    .editor-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      overflow-y: auto;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .crud-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .item-list {
+      background: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 6px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .item-row {
+      padding: 10px 15px;
+      border-bottom: 1px solid #3b3b3b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-row:hover {
+      background: #333;
+    }
+
+    /* Branching Skill Tree Layout */
+    .tree-canvas-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      background-color: #181818;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: auto;
+      padding: 30px;
+    }
+
+    .tree-grid-nodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .skill-node {
+      background: #2a2a2a;
+      padding: 12px;
+      border-radius: 8px;
+      border: 2px solid #555;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    .skill-node.locked {
+      opacity: 0.6;
+      border-color: #444;
+    }
+
+    .skill-node.available {
+      border-color: #00bcd4;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+    }
+
+    .skill-node.unlocked {
+      border-color: #4caf50;
+      background: #1b381e;
+      box-shadow: 0 0 12px rgba(76, 175, 80, 0.4);
+    }
+
+    .prereq-tag {
+      font-size: 0.75rem;
+      color: #aaa;
+      background: #1e1e1e;
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+
+    input, select, textarea {
+      padding: 8px;
+      background: #2a2a2a;
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    #error-toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #d32f2f;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">YetAnotherTowerDefenceGame</div>
+    <div class="currencies">
+      <div class="curr-item">🪙 Coins: <span id="coins-display">100</span></div>
+      <div class="curr-item">💎 Crystals: <span id="crystals-display">0</span></div>
+      <div class="curr-item">🔷 Diamonds: <span id="diamonds-display">0</span></div>
+      <div class="curr-item">🔮 Dark Orbs: <span id="dark-orbs-display">0</span></div>
+      <div class="curr-item">⭐ Prestige Tier: <span id="prestige-display">0</span></div>
+    </div>
+  </header>
+
+  <nav class="nav-tabs">
+    <button class="tab-btn active" data-tab="game-tab">Game</button>
+    <button class="tab-btn" data-tab="skills-tab">Skill Trees</button>
+    <button class="tab-btn" data-tab="editor-tab">Level & Stats Editor</button>
+    <button class="tab-btn" data-tab="skills-editor-tab">Skill Trees Editor</button>
+    <button class="tab-btn" data-tab="options-tab">Save & Options</button>
+  </nav>
+
+  <main>
+    <!-- GAME TAB -->
+    <div id="game-tab" class="tab-content active">
+      <div class="canvas-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+      </div>
+
+      <div class="game-sidebar">
+        <div class="section-title">Level Selection</div>
+        <select id="level-select"></select>
+
+        <button id="start-combat-btn" class="btn">Start Wave / Combat</button>
+
+        <div class="section-title">Base Health</div>
+        <div id="base-hp-display">100 / 100</div>
+
+        <div class="section-title">Tower Arsenal</div>
+        <div id="tower-list" class="tower-selection"></div>
+
+        <div class="section-title">Selected Tower Controls</div>
+        <div id="tower-controls" style="display: none;">
+          <div class="form-group">
+            <label>Facing Angle (°): <span id="angle-val">0</span></label>
+            <input type="range" id="angle-input" min="0" max="360" value="0" />
+          </div>
+          <div class="form-group">
+            <label>Attack Spread (°): <span id="spread-val">45</span></label>
+            <input type="range" id="spread-input" min="10" max="180" value="45" />
+          </div>
+          <button id="delete-tower-btn" class="btn btn-danger">Sell / Remove Tower</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILL TREES TAB -->
+    <div id="skills-tab" class="tab-content">
+      <div class="editor-container">
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+          <label>Select Skill Tree: </label>
+          <select id="skill-tree-select">
+            <option value="normal">Normal Tree (Coins)</option>
+            <option value="prestige_1">Prestige 1 (Crystals)</option>
+            <option value="prestige_2">Prestige 2 (Diamonds)</option>
+            <option value="prestige_3">Prestige 3 (Dark Orbs)</option>
+          </select>
+        </div>
+        <div class="tree-canvas-container">
+          <div id="skill-tree-grid" class="tree-grid-nodes"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEVEL & STATS EDITOR TAB -->
+    <div id="editor-tab" class="tab-content">
+      <div class="editor-container">
+        <div id="editor-auth-section">
+          <h3>Editor Authentication</h3>
+          <p>Please enter the admin password to access editors:</p>
+          <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <input type="password" id="editor-pass-input" placeholder="Password" />
+            <button id="editor-login-btn" class="btn">Login</button>
+          </div>
+        </div>
+
+        <div id="editor-main-section" style="display: none;">
+          <h3>Level & Stats Editor</h3>
+          <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+            <button id="export-levels-btn" class="btn">Export Levels JSON</button>
+            <button id="export-towers-btn" class="btn">Export Towers JSON</button>
+            <button id="export-enemies-btn" class="btn">Export Enemies JSON</button>
+          </div>
+
+          <h4 style="color: #00bcd4; margin-top: 10px;">Manage Towers</h4>
+          <div class="crud-grid">
+            <div>
+              <h5>Existing Towers</h5>
+              <div id="editor-tower-list" class="item-list"></div>
+            </div>
+            <div>
+              <h5>Add / Edit Tower</h5>
+              <div class="form-group"><label>Tower ID</label><input type="text" id="ed-tower-id" placeholder="e.g. laser" /></div>
+              <div class="form-group"><label>Name</label><input type="text" id="ed-tower-name" /></div>
+              <div class="form-group"><label>Cost</label><input type="text" id="ed-tower-cost" placeholder="100" /></div>
+              <div class="form-group"><label>Range</label><input type="number" id="ed-tower-range" value="150" /></div>
+              <div class="form-group"><label>Damage</label><input type="text" id="ed-tower-damage" placeholder="50" /></div>
+              <div class="form-group"><label>Fire Rate</label><input type="number" step="0.1" id="ed-tower-firerate" value="1.0" /></div>
+              <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <button id="ed-tower-save-btn" class="btn">Save / Add Tower</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILL TREES EDITOR TAB -->
+    <div id="skills-editor-tab" class="tab-content">
+      <div class="editor-container">
+        <div id="skills-editor-auth-msg">Login in the Level Editor tab first to access Skill Tree editing.</div>
+        <div id="skills-editor-main" style="display: none;">
+          <h3>Skill Tree Editor</h3>
+          <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px;">
+            <label>Select Tree: </label>
+            <select id="ed-tree-select">
+              <option value="normal">Normal</option>
+              <option value="prestige_1">Prestige 1</option>
+              <option value="prestige_2">Prestige 2</option>
+              <option value="prestige_3">Prestige 3</option>
+            </select>
+            <button id="export-skills-btn" class="btn">Export Skill Trees JSON</button>
+          </div>
+
+          <div class="crud-grid">
+            <div>
+              <h5>Skill Nodes</h5>
+              <div id="ed-skill-list" class="item-list"></div>
+            </div>
+            <div>
+              <h5>Add / Edit Skill Node</h5>
+              <div class="form-group"><label>Skill ID</label><input type="text" id="ed-skill-id" placeholder="skill_normal_1" /></div>
+              <div class="form-group"><label>Name</label><input type="text" id="ed-skill-name" /></div>
+              <div class="form-group"><label>Description</label><input type="text" id="ed-skill-desc" /></div>
+              <div class="form-group"><label>Cost</label><input type="text" id="ed-skill-cost" placeholder="10" /></div>
+              <button id="ed-skill-save-btn" class="btn">Save / Add Skill</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTIONS TAB -->
+    <div id="options-tab" class="tab-content">
+      <div class="editor-container">
+        <h3>Save Management & Prestige</h3>
+        <div class="form-group">
+          <label>Exported Save Data (JSON):</label>
+          <textarea id="save-json-text" rows="6"></textarea>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <button id="export-save-btn" class="btn">Export Save</button>
+          <button id="import-save-btn" class="btn">Import Save</button>
+        </div>
+
+        <h3 style="margin-top: 20px;">Prestige System</h3>
+        <p>Reset progress in exchange for higher-tier prestige currencies!</p>
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+          <button id="prestige-1-btn" class="btn">Prestige Tier 1 (Cost: 1e300 Coins)</button>
+          <button id="prestige-2-btn" class="btn">Prestige Tier 2 (Cost: 1e300 Crystals)</button>
+          <button id="prestige-3-btn" class="btn">Prestige Tier 3 (Cost: 1e300 Diamonds)</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="error-toast"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

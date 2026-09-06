@@ -1,0 +1,3222 @@
+{
+  "normal": {
+    "treeId": "normal",
+    "name": "Standard Skill Tree",
+    "currency": "coins",
+    "skills": [
+      {
+        "id": "skill_normal_root",
+        "name": "Standard Skill Tree Core",
+        "description": "Foundational upgrade boosting all tower damage (+20%).",
+        "cost": "10",
+        "currency": "coins",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 0.2,
+          "rangeBonus": 5,
+          "fireRateBonus": 0.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d1_a",
+        "name": "Power 1A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.6,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d1_b",
+        "name": "Power 1B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e8",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.85,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d2_a",
+        "name": "Power 2A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e12",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d2_b",
+        "name": "Power 2B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.6,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d3_a",
+        "name": "Power 3A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.6,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d3_b",
+        "name": "Power 3B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.35,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d4_a",
+        "name": "Power 4A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d4_b",
+        "name": "Power 4B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d5_a",
+        "name": "Power 5A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.6,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d5_b",
+        "name": "Power 5B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.85,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d6_a",
+        "name": "Power 6A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b0_d6_b",
+        "name": "Power 6B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b0_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.6,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d1_a",
+        "name": "Rapid Fire 1A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.22
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d1_b",
+        "name": "Rapid Fire 1B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e10",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.32000000000000006
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d2_a",
+        "name": "Rapid Fire 2A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e14",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.42000000000000004
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d2_b",
+        "name": "Rapid Fire 2B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e16",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.6200000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d3_a",
+        "name": "Rapid Fire 3A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e20",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.6200000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d3_b",
+        "name": "Rapid Fire 3B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e22",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.9200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d4_a",
+        "name": "Rapid Fire 4A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e26",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.8200000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d4_b",
+        "name": "Rapid Fire 4B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e28",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.2200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d5_a",
+        "name": "Rapid Fire 5A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e32",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d5_b",
+        "name": "Rapid Fire 5B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e34",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.52
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d6_a",
+        "name": "Rapid Fire 6A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e38",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.2200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b1_d6_b",
+        "name": "Rapid Fire 6B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e40",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b1_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.8200000000000003
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d1_a",
+        "name": "Sniper Vision 1A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 17,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d1_b",
+        "name": "Sniper Vision 1B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e12",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 24.5,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d2_a",
+        "name": "Sniper Vision 2A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e16",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 32,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d2_b",
+        "name": "Sniper Vision 2B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e18",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 47,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d3_a",
+        "name": "Sniper Vision 3A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e22",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 47,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d3_b",
+        "name": "Sniper Vision 3B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e24",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 69.5,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d4_a",
+        "name": "Sniper Vision 4A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e28",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 62,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d4_b",
+        "name": "Sniper Vision 4B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e30",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 92,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d5_a",
+        "name": "Sniper Vision 5A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e34",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 77,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d5_b",
+        "name": "Sniper Vision 5B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e36",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 114.5,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d6_a",
+        "name": "Sniper Vision 6A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e40",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 92,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b2_d6_b",
+        "name": "Sniper Vision 6B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e42",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b2_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 137,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d1_a",
+        "name": "Mastery 1A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.9,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d1_b",
+        "name": "Mastery 1B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.3000000000000003,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d2_a",
+        "name": "Mastery 2A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1.7000000000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d2_b",
+        "name": "Mastery 2B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.5000000000000004,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d3_a",
+        "name": "Mastery 3A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2.5000000000000004,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d3_b",
+        "name": "Mastery 3B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.7000000000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d4_a",
+        "name": "Mastery 4A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3.3000000000000003,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d4_b",
+        "name": "Mastery 4B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.9,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d5_a",
+        "name": "Mastery 5A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d5_b",
+        "name": "Mastery 5B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 6.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d6_a",
+        "name": "Mastery 6A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e42",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4.9,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_b3_d6_b",
+        "name": "Mastery 6B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e44",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_b3_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 7.300000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_normal_extra_50",
+        "name": "Auxiliary Node 50",
+        "description": "Auxiliary power amplification.",
+        "cost": "1e200",
+        "currency": "coins",
+        "requires": [
+          "skill_normal_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.5,
+          "rangeBonus": 10,
+          "fireRateBonus": 0.1
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_1": {
+    "treeId": "prestige_1",
+    "name": "Crystal Mastery (Prestige 1)",
+    "currency": "crystals",
+    "skills": [
+      {
+        "id": "skill_prestige_1_root",
+        "name": "Crystal Mastery (Prestige 1) Core",
+        "description": "Foundational upgrade boosting all tower damage (+2,000%).",
+        "cost": "10",
+        "currency": "crystals",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 20,
+          "rangeBonus": 5,
+          "fireRateBonus": 0.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d1_a",
+        "name": "Power 1A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 50.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d1_b",
+        "name": "Power 1B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e8",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 75.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d2_a",
+        "name": "Power 2A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e12",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 100.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d2_b",
+        "name": "Power 2B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 150.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d3_a",
+        "name": "Power 3A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 150.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d3_b",
+        "name": "Power 3B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 225.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d4_a",
+        "name": "Power 4A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 200.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d4_b",
+        "name": "Power 4B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 300.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d5_a",
+        "name": "Power 5A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 250.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d5_b",
+        "name": "Power 5B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 375.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d6_a",
+        "name": "Power 6A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 300.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b0_d6_b",
+        "name": "Power 6B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b0_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 450.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d1_a",
+        "name": "Rapid Fire 1A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d1_b",
+        "name": "Rapid Fire 1B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e10",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.5200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d2_a",
+        "name": "Rapid Fire 2A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e14",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 2.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d2_b",
+        "name": "Rapid Fire 2B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e16",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d3_a",
+        "name": "Rapid Fire 3A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e20",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d3_b",
+        "name": "Rapid Fire 3B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e22",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.5200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d4_a",
+        "name": "Rapid Fire 4A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e26",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d4_b",
+        "name": "Rapid Fire 4B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e28",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d5_a",
+        "name": "Rapid Fire 5A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e32",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 5.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d5_b",
+        "name": "Rapid Fire 5B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e34",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 7.52
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d6_a",
+        "name": "Rapid Fire 6A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e38",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b1_d6_b",
+        "name": "Rapid Fire 6B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e40",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b1_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 9.020000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d1_a",
+        "name": "Sniper Vision 1A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 152,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d1_b",
+        "name": "Sniper Vision 1B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e12",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 227,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d2_a",
+        "name": "Sniper Vision 2A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e16",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 302,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d2_b",
+        "name": "Sniper Vision 2B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e18",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d3_a",
+        "name": "Sniper Vision 3A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e22",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d3_b",
+        "name": "Sniper Vision 3B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e24",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 677,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d4_a",
+        "name": "Sniper Vision 4A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e28",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 602,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d4_b",
+        "name": "Sniper Vision 4B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e30",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d5_a",
+        "name": "Sniper Vision 5A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e34",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 752,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d5_b",
+        "name": "Sniper Vision 5B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e36",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1127,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d6_a",
+        "name": "Sniper Vision 6A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e40",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b2_d6_b",
+        "name": "Sniper Vision 6B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e42",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b2_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1352,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d1_a",
+        "name": "Mastery 1A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 80.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d1_b",
+        "name": "Mastery 1B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 120.10000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d2_a",
+        "name": "Mastery 2A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 160.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d2_b",
+        "name": "Mastery 2B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 240.10000000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d3_a",
+        "name": "Mastery 3A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 240.10000000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d3_b",
+        "name": "Mastery 3B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 360.1000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d4_a",
+        "name": "Mastery 4A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 320.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d4_b",
+        "name": "Mastery 4B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 480.1000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d5_a",
+        "name": "Mastery 5A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 400.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d5_b",
+        "name": "Mastery 5B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 600.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d6_a",
+        "name": "Mastery 6A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e42",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 480.1000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_b3_d6_b",
+        "name": "Mastery 6B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e44",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_b3_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 720.1000000000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_1_extra_50",
+        "name": "Auxiliary Node 50",
+        "description": "Auxiliary power amplification.",
+        "cost": "1e200",
+        "currency": "crystals",
+        "requires": [
+          "skill_prestige_1_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 50,
+          "rangeBonus": 10,
+          "fireRateBonus": 0.1
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_2": {
+    "treeId": "prestige_2",
+    "name": "Diamond Dominance (Prestige 2)",
+    "currency": "diamonds",
+    "skills": [
+      {
+        "id": "skill_prestige_2_root",
+        "name": "Diamond Dominance (Prestige 2) Core",
+        "description": "Foundational upgrade boosting all tower damage (+200,000%).",
+        "cost": "10",
+        "currency": "diamonds",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 2000,
+          "rangeBonus": 5,
+          "fireRateBonus": 0.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d1_a",
+        "name": "Power 1A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 5000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d1_b",
+        "name": "Power 1B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e8",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 7500.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d2_a",
+        "name": "Power 2A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e12",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 10000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d2_b",
+        "name": "Power 2B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 15000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d3_a",
+        "name": "Power 3A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 15000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d3_b",
+        "name": "Power 3B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 22500.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d4_a",
+        "name": "Power 4A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 20000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d4_b",
+        "name": "Power 4B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 30000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d5_a",
+        "name": "Power 5A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 25000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d5_b",
+        "name": "Power 5B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 37500.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d6_a",
+        "name": "Power 6A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 30000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b0_d6_b",
+        "name": "Power 6B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b0_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 45000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d1_a",
+        "name": "Rapid Fire 1A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d1_b",
+        "name": "Rapid Fire 1B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e10",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.5200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d2_a",
+        "name": "Rapid Fire 2A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e14",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 2.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d2_b",
+        "name": "Rapid Fire 2B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e16",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d3_a",
+        "name": "Rapid Fire 3A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e20",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d3_b",
+        "name": "Rapid Fire 3B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e22",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.5200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d4_a",
+        "name": "Rapid Fire 4A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e26",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d4_b",
+        "name": "Rapid Fire 4B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e28",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d5_a",
+        "name": "Rapid Fire 5A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e32",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 5.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d5_b",
+        "name": "Rapid Fire 5B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e34",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 7.52
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d6_a",
+        "name": "Rapid Fire 6A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e38",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b1_d6_b",
+        "name": "Rapid Fire 6B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e40",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b1_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 9.020000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d1_a",
+        "name": "Sniper Vision 1A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 152,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d1_b",
+        "name": "Sniper Vision 1B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e12",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 227,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d2_a",
+        "name": "Sniper Vision 2A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e16",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 302,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d2_b",
+        "name": "Sniper Vision 2B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e18",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d3_a",
+        "name": "Sniper Vision 3A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e22",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d3_b",
+        "name": "Sniper Vision 3B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e24",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 677,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d4_a",
+        "name": "Sniper Vision 4A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e28",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 602,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d4_b",
+        "name": "Sniper Vision 4B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e30",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d5_a",
+        "name": "Sniper Vision 5A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e34",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 752,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d5_b",
+        "name": "Sniper Vision 5B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e36",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1127,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d6_a",
+        "name": "Sniper Vision 6A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e40",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b2_d6_b",
+        "name": "Sniper Vision 6B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e42",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b2_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1352,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d1_a",
+        "name": "Mastery 1A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 8000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d1_b",
+        "name": "Mastery 1B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 12000.100000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d2_a",
+        "name": "Mastery 2A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 16000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d2_b",
+        "name": "Mastery 2B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 24000.100000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d3_a",
+        "name": "Mastery 3A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 24000.100000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d3_b",
+        "name": "Mastery 3B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 36000.100000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d4_a",
+        "name": "Mastery 4A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 32000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d4_b",
+        "name": "Mastery 4B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 48000.100000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d5_a",
+        "name": "Mastery 5A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 40000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d5_b",
+        "name": "Mastery 5B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 60000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d6_a",
+        "name": "Mastery 6A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e42",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 48000.100000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_b3_d6_b",
+        "name": "Mastery 6B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e44",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_b3_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 72000.10000000002,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_2_extra_50",
+        "name": "Auxiliary Node 50",
+        "description": "Auxiliary power amplification.",
+        "cost": "1e200",
+        "currency": "diamonds",
+        "requires": [
+          "skill_prestige_2_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 5000,
+          "rangeBonus": 10,
+          "fireRateBonus": 0.1
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  },
+  "prestige_3": {
+    "treeId": "prestige_3",
+    "name": "Dark Orb Transcendence (Prestige 3)",
+    "currency": "dark_orbs",
+    "skills": [
+      {
+        "id": "skill_prestige_3_root",
+        "name": "Dark Orb Transcendence (Prestige 3) Core",
+        "description": "Foundational upgrade boosting all tower damage (+20,000,000%).",
+        "cost": "10",
+        "currency": "dark_orbs",
+        "requires": [],
+        "statBonus": {
+          "damageMultiplier": 200000,
+          "rangeBonus": 5,
+          "fireRateBonus": 0.05
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d1_a",
+        "name": "Power 1A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 500000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d1_b",
+        "name": "Power 1B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e8",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 750000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d2_a",
+        "name": "Power 2A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e12",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d2_b",
+        "name": "Power 2B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1500000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d3_a",
+        "name": "Power 3A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1500000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d3_b",
+        "name": "Power 3B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2250000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d4_a",
+        "name": "Power 4A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d4_b",
+        "name": "Power 4B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d5_a",
+        "name": "Power 5A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2500000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d5_b",
+        "name": "Power 5B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3750000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d6_a",
+        "name": "Power 6A",
+        "description": "Branch Power: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b0_d6_b",
+        "name": "Power 6B",
+        "description": "Branch Power: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b0_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4500000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d1_a",
+        "name": "Rapid Fire 1A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d1_b",
+        "name": "Rapid Fire 1B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e10",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 1.5200000000000002
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d2_a",
+        "name": "Rapid Fire 2A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e14",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 2.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d2_b",
+        "name": "Rapid Fire 2B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e16",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d3_a",
+        "name": "Rapid Fire 3A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e20",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 3.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d3_b",
+        "name": "Rapid Fire 3B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e22",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.5200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d4_a",
+        "name": "Rapid Fire 4A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e26",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 4.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d4_b",
+        "name": "Rapid Fire 4B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e28",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d5_a",
+        "name": "Rapid Fire 5A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e32",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 5.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d5_b",
+        "name": "Rapid Fire 5B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e34",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 7.52
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d6_a",
+        "name": "Rapid Fire 6A",
+        "description": "Branch Rapid Fire: Major stat enhance. Requires previous node.",
+        "cost": "1e38",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 6.0200000000000005
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b1_d6_b",
+        "name": "Rapid Fire 6B",
+        "description": "Branch Rapid Fire: Specialized variant node.",
+        "cost": "1e40",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b1_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 9.020000000000001
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d1_a",
+        "name": "Sniper Vision 1A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 152,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d1_b",
+        "name": "Sniper Vision 1B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e12",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 227,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d2_a",
+        "name": "Sniper Vision 2A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e16",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 302,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d2_b",
+        "name": "Sniper Vision 2B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e18",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d3_a",
+        "name": "Sniper Vision 3A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e22",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 452,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d3_b",
+        "name": "Sniper Vision 3B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e24",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 677,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d4_a",
+        "name": "Sniper Vision 4A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e28",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 602,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d4_b",
+        "name": "Sniper Vision 4B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e30",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d5_a",
+        "name": "Sniper Vision 5A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e34",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 752,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d5_b",
+        "name": "Sniper Vision 5B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e36",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1127,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d6_a",
+        "name": "Sniper Vision 6A",
+        "description": "Branch Sniper Vision: Major stat enhance. Requires previous node.",
+        "cost": "1e40",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 902,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b2_d6_b",
+        "name": "Sniper Vision 6B",
+        "description": "Branch Sniper Vision: Specialized variant node.",
+        "cost": "1e42",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b2_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 0.1,
+          "rangeBonus": 1352,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d1_a",
+        "name": "Mastery 1A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "50",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 800000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d1_b",
+        "name": "Mastery 1B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e14",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1200000.1000000003,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d2_a",
+        "name": "Mastery 2A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e18",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d1_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 1600000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d2_b",
+        "name": "Mastery 2B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e20",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2400000.1000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d3_a",
+        "name": "Mastery 3A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e24",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d2_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 2400000.1000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d3_b",
+        "name": "Mastery 3B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e26",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3600000.1000000006,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d4_a",
+        "name": "Mastery 4A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e30",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d3_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 3200000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d4_b",
+        "name": "Mastery 4B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e32",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4800000.100000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d5_a",
+        "name": "Mastery 5A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e36",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d4_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d5_b",
+        "name": "Mastery 5B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e38",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 6000000.1,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d6_a",
+        "name": "Mastery 6A",
+        "description": "Branch Mastery: Major stat enhance. Requires previous node.",
+        "cost": "1e42",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d5_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 4800000.100000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_b3_d6_b",
+        "name": "Mastery 6B",
+        "description": "Branch Mastery: Specialized variant node.",
+        "cost": "1e44",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_b3_d6_a"
+        ],
+        "statBonus": {
+          "damageMultiplier": 7200000.100000001,
+          "rangeBonus": 2,
+          "fireRateBonus": 0.02
+        },
+        "icon": "assets/skill_icon.png"
+      },
+      {
+        "id": "skill_prestige_3_extra_50",
+        "name": "Auxiliary Node 50",
+        "description": "Auxiliary power amplification.",
+        "cost": "1e200",
+        "currency": "dark_orbs",
+        "requires": [
+          "skill_prestige_3_root"
+        ],
+        "statBonus": {
+          "damageMultiplier": 500000,
+          "rangeBonus": 10,
+          "fireRateBonus": 0.1
+        },
+        "icon": "assets/skill_icon.png"
+      }
+    ]
+  }
+}
